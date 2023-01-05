@@ -1,10 +1,10 @@
-'use client'
+
 import { Footer, Navbar } from "../../components"
 import { Driver } from "../../sections"
 import { getProfile, getPaths } from "../../utils/services"
 
 
-function Drivers({driver}) {
+export default function Drivers({driver}) {
 
   return (
     <div className="home overflow-hidden w-full min-h-screen">
@@ -20,7 +20,6 @@ function Drivers({driver}) {
   )
 }
 
-export default Drivers
 
 export async function getStaticProps({params}){
   const data = await getProfile(params.slug)
