@@ -1,7 +1,6 @@
 'use client';
-import { FaTaxi } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
+import { socials } from '../constants';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
@@ -17,9 +16,18 @@ const Navbar = () => (
       className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
     >
       
-        <FaTaxi
-          className="text-[24px] text-white cursor-pointer"
-        />
+      <div className="flex items-center gap-5 z-10">
+      {socials.map((social) => (
+              <a href={social.src}>
+                <img
+                key={social.name}
+                src={social.url}
+                alt={social.name}
+                className="w-[24px] h-[24px] object-contain cursor-pointer"
+              />
+              </a>
+            ))}
+      </div>
         <h2 className="font-extrabold text-[30px] leading-[30.24px] text-white">
         TaxiTel
       </h2>
