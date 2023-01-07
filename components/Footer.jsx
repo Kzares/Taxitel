@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
+import { FaTaxi } from 'react-icons/fa';
 
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
