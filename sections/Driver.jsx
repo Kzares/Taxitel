@@ -11,7 +11,7 @@ function Driver({driver}) {
     return (
         <section className={`${styles.innerWidth} mx-auto px-5 space-y-5`}>
             <TitleText
-                title={<>This is one of our amazing <br className="md:block hidden" /> drivers</>}
+                title={<>Este es uno de nuestros<br className="md:block hidden" /> conductores</>}
                 textStyles="text-right"
             />
             <motion.div
@@ -36,7 +36,7 @@ function Driver({driver}) {
                             {driver?.name}
                         </h4>
                         <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-                            Taxitel Driver
+                            Conductor de TaxiTel
                         </p>
                     </div>
 
