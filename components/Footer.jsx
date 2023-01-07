@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
-import { FaTaxi } from 'react-icons/fa';
 
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
@@ -42,7 +41,7 @@ const Footer = () => (
           <div className="flex gap-4">
             <p className='cursor-pointer text-white font-semibold'>+53 52890260</p>
             {socials.map((social) => (
-              <a href={social.url}>
+              <a href={social.src}>
                 <img
                 key={social.name}
                 src={social.url}
