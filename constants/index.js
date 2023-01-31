@@ -11,7 +11,7 @@ export const startingFeatures = [
 export const newFeatures = [
   {
     icon: <AiOutlineTeam className='text-[40px] text-white' />,
-    title: 'Conductores a tu disposicion',
+    title: 'Conductores a tu disposición',
     subtitle:
       'Contamos con una flota de conductores bien preparados a su disposicion',
   },
